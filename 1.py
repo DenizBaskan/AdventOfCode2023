@@ -18,8 +18,7 @@ for i, line in enumerate(lines):
     if line[i] in "0123456789":
       found.append(line[i])
     else:
-      for j, k in enumerate([
-        "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]):
+      for j, k in enumerate(["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]):
         if i+len(k) <= len(line) and line[i:i+len(k)] == k:
           found.append(str(j))
   sum += int(found[0] + found[len(found)-1])
