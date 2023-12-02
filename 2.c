@@ -5,9 +5,8 @@
 int main(int argc, char** argv)
 {
     FILE* f = fopen("./input.txt", "r");
-    if (f == NULL) {
+    if (f == NULL)
         return 1;
-    }
 
     char line[256];
     int iter = 1;
@@ -28,17 +27,14 @@ int main(int argc, char** argv)
                     valid_game = 0;
                 }
 
-                if (r > bR) {
+                if (r > bR)
                     bR = r;
-                }
 
-                if (g > bG) {
+                if (g > bG)
                     bG = g;
-                }
 
-                if (b > bB) {
+                if (b > bB)
                     bB = b;
-                }
 
                 r = g = b = 0;
             }
