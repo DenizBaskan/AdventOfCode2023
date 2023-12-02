@@ -21,9 +21,8 @@ int main(int argc, char** argv)
 
         for (int i = 0; i < strlen(line); i++) {
             if (line[i] == ';' || i == strlen(line) - 1) { // if new set started or line is over
-                if (!(r <= 12 && g <= 13 && b <= 14)) {
+                if (!(r <= 12 && g <= 13 && b <= 14))
                     valid_game = 0;
-                }
 
                 if (r > bR)
                     bR = r;
