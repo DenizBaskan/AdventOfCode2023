@@ -15,10 +15,8 @@ int main(int argc, char** argv)
 
     while (fgets(line, sizeof(line), f) != NULL) {
         line[strlen(line) - 1] = 0; // discard \n
-        int r, g, b;
-        int bR, bG, bB; // biggest r, biggest g...
-        r = g = b = 0;
-        bR = bG = bB = 0;
+        int r, g, b, bR, bG, bB; // bR, bG = biggest r, biggest g...
+        r = g = b = bR = bG = bB = 0;
         int valid_game = 1;
 
         for (int i = 0; i < strlen(line); i++) {
